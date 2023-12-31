@@ -27,3 +27,15 @@ pub fn remove_whitespace(text: &str) -> Vec<String> {
 
     return final_tokens;
 }
+
+#[wasm_bindgen]
+
+pub fn find_emails(text: &str) -> Vec<String> {
+    let re = Regex::new(r"\S+@\S+\.\S+").unwrap();  // Compile the regex pattern
+
+    let matches = re.find_iter(text);  // Find all email matches
+
+    matches
+        .map(|m| m.as_str().to_string())  // Extract matched strings and create owned strings
+        .collect()  // Collect into a vector
+}
