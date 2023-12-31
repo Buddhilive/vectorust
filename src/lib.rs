@@ -1,9 +1,15 @@
 use wasm_bindgen::prelude::*;
 use regex::Regex;
 
+/// Declares a function with C calling convention, making it callable from other languages
+/// like JavaScript and C/C++.
+///
+/// - Use snake_case names for compatibility with C.
+/// - Prefer basic types for parameters and return values.
+/// - Be mindful of memory management and error handling when interacting with C code.
 #[wasm_bindgen]
 extern "C" {
-    
+    // Your function declarations here
 }
 
 #[wasm_bindgen]
