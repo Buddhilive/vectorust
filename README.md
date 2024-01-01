@@ -1,1 +1,1 @@
-# SLTK
+# SLTK (Sinhala Language Toolkit)
