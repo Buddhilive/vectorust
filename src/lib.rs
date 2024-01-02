@@ -29,7 +29,8 @@ pub fn remove_whitespace(text: &str) -> Vec<String> {
 }
 
 #[wasm_bindgen]
-
+/// This function will find and return emails in a string as a Array of strings
+/// * `text` - The string to find emails
 pub fn find_emails(text: &str) -> Vec<String> {
     let re = Regex::new(r"\S+@\S+\.\S+").unwrap();  // Compile the regex pattern
 

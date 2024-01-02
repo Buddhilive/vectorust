@@ -12,13 +12,12 @@
     "gulp": "gulp",
     "test": "npm run build:all && jest ./testing",
     "build": "npm run build:all && gulp",
-    "publish": "npm publish ./dist"
+    "publish:pkg": "npm publish ./dist"
   },
   "main": "cjs/sltk.js",
   "module": "esm/sltk.js",
   "browser": "web/sltk.js",
   "types": "types/sltk.d.ts",
-  "private": true,
   "devDependencies": {
     "@babel/preset-env": "^7.22.20",
     "@types/jest": "^29.4.0",
