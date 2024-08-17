@@ -3,18 +3,18 @@ var del = require('del');
 
 const trash_files = [
     'dist/web/.gitignore',
-    'dist/web/sltk_bg.wasm.d.ts',
-    'dist/web/sltk.d.ts',
+    'dist/web/vectorust_bg.wasm.d.ts',
+    'dist/web/vectorust.d.ts',
     'dist/web/package.json',
     'dist/web/README.md',
     'dist/esm/.gitignore',
-    'dist/esm/sltk_bg.wasm.d.ts',
-    'dist/esm/sltk.d.ts',
+    'dist/esm/vectorust_bg.wasm.d.ts',
+    'dist/esm/vectorust.d.ts',
     'dist/esm/package.json',
     'dist/esm/README.md',
     'dist/cjs/.gitignore',
-    'dist/cjs/sltk_bg.wasm.d.ts',
-    'dist/cjs/sltk.d.ts',
+    'dist/cjs/vectorust_bg.wasm.d.ts',
+    'dist/cjs/vectorust.d.ts',
     'dist/cjs/package.json',
     'dist/cjs/README.md',
 ];
@@ -24,7 +24,7 @@ function clean() {
 }
 
 function create_types() {
-    return gulp.src('dist/esm/sltk.d.ts')
+    return gulp.src('dist/esm/vectorust.d.ts')
     .pipe(gulp.dest('dist/types/'));
 }
 

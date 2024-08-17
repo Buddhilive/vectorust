@@ -1,1 +1,1 @@
-# SLTK (Sinhala Language Toolkit)
+# Vectorust

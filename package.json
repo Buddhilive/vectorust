@@ -1,7 +1,7 @@
 {
-  "name": "sltk",
+  "name": "vectorust",
   "version": "0.0.1-beta.1",
-  "description": "SLTK",
+  "description": "Vectors in Rust",
   "license": "MIT",
   "scripts": {
     "build:esm": "wasm-pack build --out-dir dist/esm --target bundler",
@@ -14,10 +14,10 @@
     "build": "npm run build:all && gulp",
     "publish:pkg": "npm publish ./dist"
   },
-  "main": "cjs/sltk.js",
-  "module": "esm/sltk.js",
-  "browser": "web/sltk.js",
-  "types": "types/sltk.d.ts",
+  "main": "cjs/vectorust.js",
+  "module": "esm/vectorust.js",
+  "browser": "web/vectorust.js",
+  "types": "types/vectorust.d.ts",
   "devDependencies": {
     "@babel/preset-env": "^7.22.20",
     "@types/jest": "^29.4.0",
@@ -42,16 +42,16 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/buddhilive/sltk.git"
+    "url": "git+https://github.com/buddhilive/vectorust.git"
   },
   "keywords": [
     "javascript",
     "nodejs"
   ],
   "bugs": {
-    "url": "https://github.com/buddhilive/sltk/issues"
+    "url": "https://github.com/buddhilive/vectorust/issues"
   },
-  "homepage": "https://sltk.buddhilive.com",
+  "homepage": "https://www.buddhilive.com",
   "author": "Buddhi Kavindra",
   "overrides": {
     "graceful-fs": "^4.2.11"

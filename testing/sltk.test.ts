@@ -1,10 +1,10 @@
-import * as sltk from '../dist/cjs/sltk';
+import * as vectorust from '../dist/cjs/vectorust';
 
-describe('sltk', () => {
+describe('vectorust', () => {
   it('Whitespace removal', () => {
-    expect(sltk.remove_whitespace('Namo Buddhaya')).toEqual(['Namo', 'Buddhaya']);
+    expect(vectorust.remove_whitespace('Namo Buddhaya')).toEqual(['Namo', 'Buddhaya']);
   });
   it('Check Emails', () => {
-    expect(sltk.find_emails('hi this is an email: info@example.lk')).toEqual(['info@example.lk']);
+    expect(vectorust.find_emails('hi this is an email: info@example.lk')).toEqual(['info@example.lk']);
   });
 });
