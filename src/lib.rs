@@ -1,5 +1,4 @@
 use wasm_bindgen::prelude::*;
-use regex::Regex;
 
 /// Declares a function with C calling convention, making it callable from other languages
 /// like JavaScript and C/C++.
@@ -13,30 +12,8 @@ extern "C" {
 }
 
 #[wasm_bindgen]
-/// This function will remove all punctuation marks from a string and split a string by whitespace
-/// * `text` - The string that needs to be tokenized by whitespace
-pub fn remove_whitespace(text: &str) -> Vec<String> {
-    let re = Regex::new(r#"([\s~`!@#$%^&\*\(\){}\[\];:"'<,\.>\?\/\\\-_+=“”‘’–•])"#).unwrap();
-    let mut final_tokens = Vec::new();
-
-    for token in re.split(text) {
-        if !token.is_empty() && !token.trim().is_empty() {
-            final_tokens.push(token.to_string());
-        }
-    }
-
-    return final_tokens;
-}
-
-#[wasm_bindgen]
-/// This function will find and return emails in a string as a Array of strings
-/// * `text` - The string to find emails
-pub fn find_emails(text: &str) -> Vec<String> {
-    let re = Regex::new(r"\S+@\S+\.\S+").unwrap();  // Compile the regex pattern
-
-    let matches = re.find_iter(text);  // Find all email matches
-
-    matches
-        .map(|m| m.as_str().to_string())  // Extract matched strings and create owned strings
-        .collect()  // Collect into a vector
+/// This function will convert inches to millimeters
+/// * `inches` - The value of inches to be converted
+pub fn inches_to_millimeters(inches: f64) -> f64 {
+    inches * 25.4
 }

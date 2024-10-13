@@ -10,7 +10,8 @@
     "build:clean": "rimraf dist",
     "build:all": "npm run build:clean && npm run build:esm && npm run build:cjs && npm run build:web",
     "gulp": "gulp",
-    "test": "npm run build:all && jest ./testing",
+    "test": "jest ./testing",
+    "test:dev": "npm run build:all && jest ./testing",
     "build": "npm run build:all && gulp",
     "publish:pkg": "npm publish ./dist"
   },
