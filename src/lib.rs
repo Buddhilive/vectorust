@@ -24,3 +24,17 @@ pub fn inches_to_millimeters(inches: f64) -> f64 {
 pub fn millimeters_to_inches(mm: f64) -> f64 {
     mm * 0.0394
 }
+
+#[wasm_bindgen]
+/// This function will convert feet to meters
+/// * `foot` - The value of feet to be converted
+pub fn feet_to_meters(feet: f64) -> f64 {
+    feet * 0.3048
+}
+
+#[wasm_bindgen]
+/// This function will convert meters to feet
+/// * `meters` - The value of meters to be converted
+pub fn meters_to_feet(meters: f64) -> f64 {
+    meters * 3.2808
+}
