@@ -16,4 +16,12 @@ describe('vectorust', () => {
   it('Meters to Feet', () => {
     expect(vectorust.meters_to_feet(3.2004)).toBeCloseTo(10.5, 2);
   });
+
+  it('Yards to Meters', () => {
+    expect(vectorust.yards_to_meters(3.4)).toBeCloseTo(3.10896, 5);
+  });
+
+  it('Meters to Yards', () => {
+    expect(vectorust.meters_to_yards(3.10896)).toBeCloseTo(3.4, 2);
+  });
 });
