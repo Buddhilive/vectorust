@@ -41,7 +41,7 @@ pub fn meters_to_feet(meters: f64) -> f64 {
 
 #[wasm_bindgen]
 /// This function will convert yards to meters
-/// * `foot` - The value of yards to be converted
+/// * `yards` - The value of yards to be converted
 pub fn yards_to_meters(yards: f64) -> f64 {
     yards * 0.9144
 }
@@ -51,4 +51,18 @@ pub fn yards_to_meters(yards: f64) -> f64 {
 /// * `meters` - The value of meters to be converted
 pub fn meters_to_yards(meters: f64) -> f64 {
     meters * 1.0936
+}
+
+#[wasm_bindgen]
+/// This function will convert miles to kilometers
+/// * `miles` - The value of miles to be converted
+pub fn miles_to_kilometers(miles: f64) -> f64 {
+    miles * 1.609344
+}
+
+#[wasm_bindgen]
+/// This function will convert kilometers to miles
+/// * `meters` - The value of meters to be converted
+pub fn kilometers_to_miles(km: f64) -> f64 {
+    km * 0.621371
 }

@@ -24,4 +24,12 @@ describe('vectorust', () => {
   it('Meters to Yards', () => {
     expect(vectorust.meters_to_yards(3.10896)).toBeCloseTo(3.4, 2);
   });
+
+  it('Miles to Kilometers', () => {
+    expect(vectorust.miles_to_kilometers(4.8)).toBeCloseTo(7.72485, 5);
+  });
+
+  it('Kilometers to Miles', () => {
+    expect(vectorust.kilometers_to_miles(7.72485)).toBeCloseTo(4.8, 2);
+  });
 });
