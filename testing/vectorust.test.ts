@@ -32,4 +32,12 @@ describe('vectorust', () => {
   it('Kilometers to Miles', () => {
     expect(vectorust.kilometers_to_miles(7.72485)).toBeCloseTo(4.8, 2);
   });
+
+  it('Acres to Hectare', () => {
+    expect(vectorust.acres_to_hectare(22.5)).toBeCloseTo(9.105427, 6);
+  });
+
+  it('Hectares to Acres', () => {
+    expect(vectorust.hectare_to_acres(9.105427)).toBeCloseTo(22.5, 2);
+  });
 });

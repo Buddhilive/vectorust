@@ -66,3 +66,17 @@ pub fn miles_to_kilometers(miles: f64) -> f64 {
 pub fn kilometers_to_miles(km: f64) -> f64 {
     km * 0.621371
 }
+
+#[wasm_bindgen]
+/// This function will convert acres to hectare
+/// * `acres` - The value of acres to be converted
+pub fn acres_to_hectare(acres: f64) -> f64 {
+    acres * 0.4046856422
+}
+
+#[wasm_bindgen]
+/// This function will convert hectare to acres
+/// * `meters` - The value of meters to be converted
+pub fn hectare_to_acres(hectare: f64) -> f64 {
+    hectare * 2.471053815
+}
